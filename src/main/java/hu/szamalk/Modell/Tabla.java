@@ -40,6 +40,7 @@ public class Tabla {
 
     public  boolean UresOszlop(int oszlop){
         int i =0;
+        oszlop =oszlop-1;
        boolean ures = true;
         while(i < oszlop && ures ){
             if (t[oszlop][i].equals("K")){
@@ -49,12 +50,13 @@ public class Tabla {
         }
        return ures;
     }
-    public  boolean UresSor(int sor){
+    public boolean UresSor(int sor){
         int i =0;
-        boolean ures = true;
+        sor = sor-1;
+        boolean ures = false;
         while(i < sor && ures ){
             if (t[sor][i].equals("K")){
-                ures = false;
+                ures = true;
             }
             i++;
         }
@@ -71,7 +73,7 @@ public class Tabla {
     }
     public int uresOszlopDb(){
         int db = 0;
-        for (int i = 0;i< 8;i++) {
+        for (int i = 0;i< 7;i++) {
             if (UresOszlop(i)){
                 db++;
             }
