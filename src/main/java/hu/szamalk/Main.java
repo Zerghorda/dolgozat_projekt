@@ -10,5 +10,7 @@ public class Main {
         Tabla tabla = new Tabla("*");
         tabla.tablaTolt();
         tabla.megjelenit();
+        tabla.Elhelyez(2);
+        tabla.megjelenit();
     }
 }
