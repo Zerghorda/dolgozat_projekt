@@ -60,5 +60,23 @@ public class Tabla {
         }
         return ures;
     }
+    public int uresSorDb(){
+        int db = 0;
+        for (int i = 0;i< 8;i++) {
+            if (UresSor(i)){
+                db++;
+            }
+        }
+        return db;
+    }
+    public int uresOszlopDb(){
+        int db = 0;
+        for (int i = 0;i< 8;i++) {
+            if (UresOszlop(i)){
+                db++;
+            }
+        }
+        return db;
+    }
 
 }

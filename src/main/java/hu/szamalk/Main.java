@@ -15,5 +15,7 @@ public class Main {
         tabla.megjelenit();
         System.out.println("1.sor ures e?"+tabla.UresSor(1));
         System.out.println("3.oszlop ures e?"+tabla.UresOszlop(7));
+        System.out.println("Ennyi üres sor van:" + tabla.uresSorDb());
+        System.out.println("Ennyi üres oszlop van:" + tabla.uresOszlopDb());
     }
 }
