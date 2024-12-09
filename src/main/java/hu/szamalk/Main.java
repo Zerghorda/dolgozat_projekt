@@ -7,6 +7,8 @@ public class Main {
         run();
     }
     public static void run(){
-        new Tabla('*');
+        Tabla tabla = new Tabla("*");
+        tabla.tablaTolt();
+        tabla.megjelenit();
     }
 }
