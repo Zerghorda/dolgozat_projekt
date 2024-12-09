@@ -11,6 +11,9 @@ public class Main {
         tabla.tablaTolt();
         tabla.megjelenit();
         tabla.Elhelyez(2);
+        System.out.println("6.feladat");
         tabla.megjelenit();
+        System.out.println("1.sor ures e?"+tabla.UresSor(1));
+        System.out.println("3.oszlop ures e?"+tabla.UresOszlop(7));
     }
 }

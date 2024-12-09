@@ -1,7 +1,6 @@
 package hu.szamalk.Modell;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class Tabla {
     private String [][] t;
@@ -28,14 +27,38 @@ public class Tabla {
             System.out.println();
         }
     }
+    //5.feladat
     public void Elhelyez(int db){
-        System.out.println("5. feladat:");
         String kiralyno = "K";
         for (int i = 0;i <db;i++){
-            int sorOszlop = (int) Math.floor(Math.random()*9-1);
-            t[sorOszlop][sorOszlop] = kiralyno;
+            int sor = (int) Math.floor(Math.random()*8-1)+1;
+            int oszlop = (int) Math.floor(Math.random()*8-1)+1;
+            while(t[sor][oszlop].equals(UresCella))
+                t[sor][oszlop] = kiralyno;
+            }
         }
-    }
 
+    public  boolean UresOszlop(int oszlop){
+        int i =0;
+       boolean ures = true;
+        while(i < oszlop && ures ){
+            if (t[oszlop][i].equals("K")){
+                ures = false;
+            }
+            i++;
+        }
+       return ures;
+    }
+    public  boolean UresSor(int sor){
+        int i =0;
+        boolean ures = true;
+        while(i < sor && ures ){
+            if (t[sor][i].equals("K")){
+                ures = false;
+            }
+            i++;
+        }
+        return ures;
+    }
 
 }
